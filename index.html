@@ -6,18 +6,18 @@
   <body>
       <h3>Enter the number : </h3>
       <input id="number" />
-      <button onclick="enterNumber()">Get Multiplications Table</button>
+      <button onclick="multificationTable()">Get Multiplications Table</button>
       <div id="result">
   </body>
   <script>
-      function enterNumber() {
+      function multificationTable() {
         var number;
         var result = "";
 
-        number = Number(document.getElementById("number").value);
+        product = Number(document.getElementById("number").value);
 
         for(var i = 1; i<= 10; i++){
-          result = result + "<p>"+number + "*" + i + "=" + number * i+"</p>";
+          result = result + "<p>"+product + "*" + i + "=" + product * i+"</p>";
         }
 
         document.getElementById("result").innerHTML = result;
